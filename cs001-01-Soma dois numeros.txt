@@ -1,0 +1,14 @@
+
+Algoritmo : Somar dois números
+
+Objetivo : Construir um algoritmo que receba dois números (inteiros ou flutuantes) informados pelo usuário 
+	   e exiba a soma entre eles.
+
+Linguagem codificada : CSharp
+
+Solução :
+
+	* Reinaldo --> pl001-01-Soma dois numeros.cs
+	* Felipe --> 
+	* Pedro --> 
+

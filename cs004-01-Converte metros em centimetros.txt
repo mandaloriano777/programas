@@ -1,0 +1,14 @@
+
+Algoritmo : Converter metros em centimetros
+
+Objetivo : Construir um algoritmo que receba um número (inteiro ou flutuante) informado pelo usuário 
+	   que será uma medida equivalente em metros (m) e progrma irá converter para centimetros.
+
+Linguagem codificada : CSharp
+
+Solução :
+
+	* Reinaldo --> pl004-01-Converte metros em centimetros.cs
+	* Felipe --> 
+	* Pedro --> 
+

@@ -1,0 +1,14 @@
+
+Algoritmo : Calcular a soma dos quadrados de dois números
+
+Objetivo : Construir um algoritmo que receba dois números (inteiros ou flutuantes) informados pelo usuário e 
+	   na sequência calcular o quadrado de cada número e finalmente exibir a soma entre eles.
+
+Linguagem codificada : CSharp
+
+Solução :
+
+	* Reinaldo --> pl003-01-Soma quadrado dois numeros.cs
+	* Felipe --> 
+	* Pedro --> 
+

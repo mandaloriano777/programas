@@ -1,0 +1,14 @@
+
+Algoritmo : Calcular a média aritmética
+
+Objetivo : Construir um algoritmo que receba quatro notas (inteiras ou flutuantes) informadas pelo usuário 
+	   e exiba a media entre elas.
+
+Linguagem codificada : CSharp
+
+Solução :
+
+	* Reinaldo --> pl002-01-Media quatro numeros.cs
+	* Felipe --> 
+	* Pedro --> 
+
