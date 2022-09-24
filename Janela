@@ -12,51 +12,59 @@ class Proram
     {
         Console.Title = "Monta Janelas";
 
-        Random cor = new Random();
-
         Console.Clear();
 
         Console.WriteLine();
-        Console.ForegroundColor = (ConsoleColor)cor.Next(1, 16);
         janela(6, 0, 70, 20);
 
         static void janela(int c1, int l1, int c2, int l2)
         {
+            Random cor = new Random();
             int cont1, cont2, cont3;
+            string vResp;
 
-            for (cont1 = c1; cont1 <= c2; cont1++)
+            do
             {
-                Console.SetCursorPosition(cont1, l1);
-                Console.Write("─");
+                Console.ForegroundColor = (ConsoleColor)cor.Next(1, 16);
 
-                Console.SetCursorPosition(cont1, l2);
-                Console.Write("─");
-            }     
+                for (cont1 = c1; cont1 <= c2; cont1++)
+                {
+                    Console.SetCursorPosition(cont1, l1);
+                    Console.Write("─");
 
-            for (cont2=l1; cont2 <= l2; cont2++)
-            {
+                    Console.SetCursorPosition(cont1, l2);
+                    Console.Write("─");
+                }
 
-                Console.SetCursorPosition(c1, cont2);
-                Console.WriteLine("│");
+                for (cont2=l1; cont2 <= l2; cont2++)
+                {
 
-                Console.SetCursorPosition(c2, cont2);
-                Console.WriteLine("│");
-            }
+                    Console.SetCursorPosition(c1, cont2);
+                    Console.WriteLine("│");
 
-            for (cont3 = l1; cont3 <= l2; cont3++)
-            {
-                Console.SetCursorPosition(c1, l1);
-                Console.WriteLine("┌");
+                    Console.SetCursorPosition(c2, cont2);
+                    Console.WriteLine("│");
+                }
 
-                Console.SetCursorPosition(c1, l2);
-                Console.WriteLine("└");
+                for (cont3 = l1; cont3 <= l2; cont3++)
+                {
+                    Console.SetCursorPosition(c1, l1);
+                    Console.WriteLine("┌");
 
-                Console.SetCursorPosition(c2, l1);
-                Console.WriteLine("┐");
+                    Console.SetCursorPosition(c1, l2);
+                    Console.WriteLine("└");
 
-                Console.SetCursorPosition(c2, l2);
-                Console.WriteLine("┘");
-            }
+                    Console.SetCursorPosition(c2, l1);
+                    Console.WriteLine("┐");
+
+                    Console.SetCursorPosition(c2, l2);
+                    Console.WriteLine("┘");
+                }
+
+                Console.Write("\n\nDeseja continuar a ver janelas [S/N]: ");
+                vResp = Console.ReadLine();
+
+            } while (vResp == "S" || vResp == "s");
         }
     }
 }
