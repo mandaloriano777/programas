@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 03 </title>
+</head>
+<body>
+
+    <h1 class="destaque">Exemplos de acesso aos elementos do HTML</h1>
+   <div id="idname" class="destaque"> Treinando bravamente todos os dias.</div> <!-- Esse � um id -->
+
+   <div id="QS" class="destaque"> Pensando no futuro. </div>  <!-- Esse � um id -->
+
+   <div id="QSA" class="classname"> Disciplina </div>  <!-- Esse � um id -->
+
+   <div class="classname">Foco </div>  <!-- Essa � uma classe --> 
+
+   <p class="destaque"> Aprendendo novas coisas todos os dias! </p>  <!-- Essa � uma tag, paragrafo. -->
+
+   
+   <script>
+
+    //Seleciona o elemento pelo id atribuido
+    var Selecao_id = document.getElementById("idname")
+
+    Selecao_id.style.backgroundColor = "gray"
+    Selecao_id.style.color = "#fff"
+
+    //Seleciona o elemento pela Tag
+    var Selecao_tag = document.getElementsByTagName('p')
+
+    Selecao_tag[0].style.background = "gray"
+    Selecao_tag[0].style.color = "#fff"
+
+    //Seleciona o elemento pela class atribuida
+    var Selecao_class = document.getElementsByClassName("classname")
+
+    Selecao_class[1].style.backgroundColor = "gray"
+    Selecao_class[1].style.color = "#fff"
+
+    /*O querySelector seleciona qualquer elemento especificado, seja ele uma div, label, h1..
+    S� precisa do nome da tag e seu id */
+    var Selecao_querySelector = document.querySelector("div#QS")
+
+    Selecao_querySelector.style.backgroundColor = "gray"
+    Selecao_querySelector.style.color = "#fff"
+
+    /*O querySelectorAll � semelhante ao querySelector, por�m inv�s de selecionar um unico elemento, 
+    ele seleciona tudo, precisando da tag e id */
+    var Selecao_querySelectorAll = document.querySelector("div#QSA")
+
+    Selecao_querySelectorAll.style.backgroundColor = "red"
+    Selecao_querySelectorAll.style.color = "#fff"
+
+    /*O querySelectorAll pode retornar mais de um elemento, por esse motivo temos qye indicar qual elemento queremos através do índice [].  
+    Nesse caso vai selecionar todos elementos que tenham a classs="classname" aqui vai retornar 2 elementos  ( disciplina e foco ) */
+    var divs_class_query_all = document.querySelectorAll(".classname");
+
+    divs_class_query_all[1].style.fontSize = '30px';
+
+
+    /*O querySelector retornar apenas um elemento, como temos vários elementos coma class="destaque" eu especifico qual eu quero selecionar nesse caso o h1.  
+    */
+    var h1_class_query = document.querySelector("h1.destaque")
+    document.write(h1_class_query.innerHTML);
+    h1_class_query.style.backgroundColor = "green";
+    h1_class_query.style.color = "white"
+ 
+
+    /*O getElementsByCalssName() pode retornar mais de um elemento, pois  podemos ter a mesma classe em diversos elementos diferentes por esse motivo temos qye indicar qual elemento queremos acessar através do índice [].  
+    Nesse caso vai selecionar todos elementos que tenham a classs="destaque" aqui vai retornar 4 elementos   */
+
+     /***********************************************************  
+       Seleção de vários elementos feitos  via class --> getElementsByCalssName() 
+     /*------------------------------------------------------------
+
+     var p_class = document.getElementsByClassName("destaque");
+
+     for(var i=0;i<p_class.length;i++){
+
+        document.write(p_class[i].innerHTML+"<br>");
+        p_class[i].style.backgroundColor = "yellow";
+        p_class[i].style.color = "green"
+     }
+
+      /***********************************************************/
+
+      /*Esse comando com o querySelectorAll()  tem o mesmo resultado que o de cima.*/
+     /***********************************************************  
+       Seleção da div e p feitos  via class --> querySelectorAll() 
+     /*------------------------------------------------------------
+
+      var p_class_query = document.querySelectorAll(".destaque");
+
+      for(var i=0;i<p_class_query.length;i++){
+
+        document.write(p_class_query[i].innerHTML+"<br>");
+        p_class_query[i].style.backgroundColor = "yellow";
+        p_class_query[i].style.color = "green"
+      }
+
+     /***********************************************************/
+
+</script>
+</body>
+</html>

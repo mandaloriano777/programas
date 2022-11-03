@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Elementos</title>
+</head>
+
+<body>
+
+    <div id="principal" class="principal">Div sem acesso do JavaScript</div>
+
+    <p class="secundaria" name="secundaria">Paragrafo sem acesso do JavaScript</p>
+   
+    
+</body>
+
+<script>
+
+ /***********************************************************   
+    Seleção da div feita via id --> getElementById() 
+ /*----------------------------------------------------------
+    var div_id = document.getElementById("principal");
+    document.write(div_id.innerHTML);
+    div_id.innerHTML = "Essa div foi alterada via JavaScript";
+    div_id.style.backgroundColor = "gray";
+    div_id.style.color = "white";
+ ***********************************************************/
+
+ /***********************************************************   
+    Seleção da div feita via class --> getElementsByClassName() 
+ ------------------------------------------------------------
+    var div_class = document.getElementsByClassName("principal");
+    document.write(div_class[0].innerHTML);
+    div_class[0].innerHTML = "Essa div foi alterada via JavaScript";
+    div_class[0].style.backgroundColor = "gray";
+    div_class[0].style.color = "white";
+ ***********************************************************/
+
+ /***********************************************************   
+    Seleção da div feita via tag --> getElementsByTagName() 
+ ------------------------------------------------------------
+    var div_tag = document.getElementsByTagName("div");
+    document.write(div_tag[0].innerHTML);
+    div_tag[0].innerHTML = "Essa div foi alterada via JavaScript";
+    div_tag[0].style.backgroundColor = "gray";
+    div_tag[0].style.color = "white";
+***********************************************************/
+
+
+ /***********************************************************   
+    Seleção da div feita via id --> querySelector() 
+ ------------------------------------------------------------
+
+    var div_id_query = document.querySelector("#principal");
+    document.write(div_id_query.innerHTML);
+    div_id_query.innerHTML = "Essa div foi alterada via JavaScript";
+    div_id_query.style.backgroundColor = "gray";
+    div_id_query.style.color = "white";
+ ***********************************************************/
+
+ /***********************************************************   
+    Seleção da div feita via class --> querySelector() 
+ ------------------------------------------------------------
+
+    var div_class_query = document.querySelector(".principal");
+    document.write(div_class_query.innerHTML);
+    div_class_query.innerHTML = "Essa div foi alterada via JavaScript";
+    div_class_query.style.backgroundColor = "gray";
+    div_class_query.style.color = "white";
+ ***********************************************************/
+
+ 
+ /***********************************************************   
+    Seleção da div feita via tag --> querySelector() 
+ ------------------------------------------------------------
+
+    var div_tag_query = document.querySelector("div");
+    document.write(div_tag_query.innerHTML);
+    div_tag_query.innerHTML = "Essa div foi alterada via JavaScript";
+    div_tag_query.style.backgroundColor = "gray";
+    div_tag_query.style.color = "white";
+
+ ***********************************************************/
+ 
+ /***********************************************************   
+    Seleção da div feita via id --> querySelectorAll() 
+ ------------------------------------------------------------
+
+    var div_id_query_all = document.querySelectorAll("#principal");
+    document.write(div_id_query_all[0].innerHTML);
+    div_id_query_all[0].innerHTML = "Essa div foi alterada via JavaScript";
+    div_id_query_all[0].style.backgroundColor = "gray";
+    div_id_query_all[0].style.color = "white";
+
+ ***********************************************************/
+
+ /***********************************************************   
+    Seleção da div feita via class --> querySelectorAll() 
+ ------------------------------------------------------------
+
+    var div_class_query_all = document.querySelectorAll(".principal");
+    document.write(div_class_query_all[0].innerHTML);
+    div_class_query_all[0].innerHTML = "Essa div foi alterada via JavaScript";
+    div_class_query_all[0].style.backgroundColor = "gray";
+    div_class_query_all[0].style.color = "white";
+
+ ***********************************************************/
+
+ /***********************************************************   
+    Seleção da div feita via name --> querySelectorAll() 
+ ------------------------------------------------------------
+
+    var div_tag_query_all = document.querySelectorAll("div");
+    document.write(div_tag_query_all[0].innerHTML);
+    div_tag_query_all[0].innerHTML = "Essa div foi alterada via JavaScript";
+    div_tag_query_all[0].style.backgroundColor = "gray";
+    div_tag_query_all[0].style.color = "white";
+
+ ***********************************************************/
+
+ /***********************************************************   
+    Seleção do p feit0 via name --> getElementsByName() 
+ ------------------------------------------------------------
+
+   var p_name = document.getElementsByName("secundaria");
+    document.write(p_name[0].innerHTML);
+    p_name[0].innerHTML = "Esse paragrafo foi alterado via JavaScript";
+    p_name[0].style.backgroundColor = "blue";
+    p_name[0].style.color = "yellow";
+
+ ***********************************************************/
+
+
+ /***********************************************************   
+    Seleção do p feita via class --> querySelector() 
+ ------------------------------------------------------------
+
+    var p_class_query = document.querySelector(".secundaria");
+    document.write(p_class_query.innerHTML);
+    p_class_query.innerHTML = "Esse paragrafo foi alterado via JavaScript";
+    p_class_query.style.backgroundColor = "blue";
+    p_class_query.style.color = "yellow";
+
+ ***********************************************************/
+
+ 
+
+   
+
+
+</script>
+</html>
